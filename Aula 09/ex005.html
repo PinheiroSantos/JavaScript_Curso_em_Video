@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='CHROME=google'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style> 
+    body{
+        background:rgb(144, 146, 153);
+        color: white;
+        font: normal 18pt Arial;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Primeiro programa com Watch in google</h1>
+    <h2>Inciando estudos DOM</h2>
+    <p>Primeiro paragrafo</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div id="msg">Clique em mim </div>
+   <script>    
+    var corpo = window.document.body;
+    var p1 = window.document.getElementsByTagName('p')[0];
+    window.document.write(p1.innerHTML);
+    corpo.style.background = 'black';
+    p1.style.color = 'red';
+    
+    // var d =window.document.getElementById('msg')
+    // d.style.background='green'
+    // d.innerText = 'Estou aguardando' 
+
+    var d = window.document.querySelector('div#msg')
+    d.style.color='red'
+    </script>
+
+       
+</body>
+</html>
+
+
+</html>

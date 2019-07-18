@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+</head>
+<body>
+        <p>Lembrando dos comandos em javaScript</p>   
+        
+</body> 
+
+<script>        
+        var nome = "Teste para armazenar sting";
+        var numero = 5;
+
+        var nomeInserido = window.prompt("Informe seu nome: ")
+        var numeroInserido = Number.parseInt(window.prompt("Informe o número que você deseja para ser somado com o número registrado no sistema: "));
+        var soma = numero + numeroInserido;
+        document.writeln(`O seu resultado, ${nomeInserido}, entre ${numero} e ${numeroInserido} é ${soma} <br>`);
+        document.writeln(`Seu nome tem ${nomeInserido.length} letras <br>`);
+        document.writeln(`Seu nome em  maiúscula: ${nomeInserido.toUpperCase()}  <br>`);
+        document.writeln(`Seu nome em  minúsculo: ${nomeInserido.toLowerCase()}  <br>`);
+
+</script>
+</html>

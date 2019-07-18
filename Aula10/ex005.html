@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+    #area{
+        background: rgb(18, 134, 18);
+        color:white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="area">   
+        Intereja...
+    </div>
+
+    <script>
+    var area = document.getElementById('area')    
+    area.addEventListener('click',clicar)
+    area.addEventListener('mouseenter',entrar)
+    area.addEventListener('mouseout',sair)
+    function clicar(){
+        area.innerText = 'Clicou!'
+        area.style.background = 'blue'
+    }
+
+    function entrar(){
+        area.innerText = 'Entrou!' 
+        area.style.background = 'green'       
+    }
+
+    function sair(){
+        area.innerText = 'Saiu!'  
+        area.style.background = 'red'      
+    }
+    </script>
+</body>
+</html>
